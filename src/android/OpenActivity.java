@@ -25,8 +25,10 @@ public class OpenActivity extends CordovaPlugin {
         if(action == "NfcSettings") {
             if (android.os.Build.VERSION.SDK_INT >= 16) {
                 i = new Intent(android.provider.Settings.ACTION_NFC_SETTINGS);
+                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 	        } else {
 	            i = new Intent(android.provider.Settings.ACTION_WIRELESS_SETTINGS);
+	            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 	        }
         } else {
         	i = new Intent(action);
