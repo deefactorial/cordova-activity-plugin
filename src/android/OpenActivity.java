@@ -1,4 +1,4 @@
-package android;
+package technology.deefactorial.cordova.activityopen;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
