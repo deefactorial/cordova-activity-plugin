@@ -22,7 +22,7 @@ public class OpenActivity extends CordovaPlugin {
         Context context = this.cordova.getActivity().getApplicationContext();
         //Intent i = new Intent(Intent.ACTION_MAIN);
         Intent i = null;
-        if(action == "NfcSettings") {
+        if(action.equals("NFCSettings")) {
             if (android.os.Build.VERSION.SDK_INT >= 16) {
                 i = new Intent(android.provider.Settings.ACTION_NFC_SETTINGS);
                 i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -32,6 +32,7 @@ public class OpenActivity extends CordovaPlugin {
 	        }
         } else {
         	i = new Intent(action);
+        	i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         }
         
         //PackageManager manager = context.getPackageManager();
