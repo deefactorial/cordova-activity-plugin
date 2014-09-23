@@ -23,7 +23,7 @@
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     id="technology.deefactorial.cordova.activityopen"
     version="0.0.1">
-    <name>Open Activity</name>
+    <name>OpenActivity</name>
     <description>Cordova External Activity Open Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,intent</keywords>
