@@ -23,7 +23,7 @@ public class OpenActivity extends CordovaPlugin {
         //Intent i = new Intent(Intent.ACTION_MAIN);
         Intent i = null;
         if (action.equals("SendErrorReport")) {
-        	reporting application = this.cordova.getActivity().getApplication();
+        	reporting application = (reporting)this.cordova.getActivity().getApplication();
         	application.sendErrorReport(null);
         } else if(action.equals("NFCSettings")) {
             if (android.os.Build.VERSION.SDK_INT >= 16) {
