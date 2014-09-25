@@ -22,6 +22,6 @@
 var argscheck = require('cordova/argscheck'),
     exec = require('cordova/exec');
 
-module.exports = function(intent) {
-    exec(null, null, "OpenActivity", intent, []);
+module.exports = function(intent,jsonArray) {
+    exec(null, null, "OpenActivity", intent, jsonArray);
 };
