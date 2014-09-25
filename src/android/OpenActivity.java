@@ -11,7 +11,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import android.util.Log;
 import android.os.Bundle;
-
+import com.openmoney.mobile.reporting;
 
 
 public class OpenActivity extends CordovaPlugin {
@@ -23,7 +23,7 @@ public class OpenActivity extends CordovaPlugin {
         //Intent i = new Intent(Intent.ACTION_MAIN);
         Intent i = null;
         if (action.equals("SendErrorReport")) {
-        	context.sendErrorReport(null);
+        	(reporting)context.sendErrorReport(null);
         } else if(action.equals("NFCSettings")) {
             if (android.os.Build.VERSION.SDK_INT >= 16) {
                 i = new Intent(android.provider.Settings.ACTION_NFC_SETTINGS);
