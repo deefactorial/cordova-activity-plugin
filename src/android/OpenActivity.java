@@ -11,7 +11,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import android.util.Log;
 import android.os.Bundle;
-import com.openmoney.mobile.reporting;
+import technology.deefactorial.cordova.reporting;
 
 
 public class OpenActivity extends CordovaPlugin {
