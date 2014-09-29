@@ -10,7 +10,7 @@ import org.acra.annotation.*;
     mailTo = "deefactorial@gmail.com",
     mode = ReportingInteractionMode.TOAST,
     customReportContent = { ReportField.APP_VERSION_CODE, ReportField.APP_VERSION_NAME, ReportField.ANDROID_VERSION, ReportField.PHONE_MODEL, ReportField.CUSTOM_DATA, ReportField.STACK_TRACE, ReportField.LOGCAT }, 
-    resToastText = R.string.crash_toast_text
+    resToastText = "A crash report is being sent"
 )
 public class reporting extends Application {
     @Override
