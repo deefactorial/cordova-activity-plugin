@@ -11,7 +11,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import android.util.Log;
 import android.os.Bundle;
-import technology.deefactorial.cordova.activityopen;
+import technology.deefactorial.cordova.activityopen.reporting;
 
 
 public class OpenActivity extends CordovaPlugin {
