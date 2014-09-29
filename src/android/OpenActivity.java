@@ -11,7 +11,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import android.util.Log;
 import android.os.Bundle;
-import reporting;
 
 
 public class OpenActivity extends CordovaPlugin {
