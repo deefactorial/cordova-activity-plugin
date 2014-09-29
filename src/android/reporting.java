@@ -1,4 +1,4 @@
-package android;
+package technology.deefactorial.cordova.activityopen;
 
 import android.app.*;
 import org.acra.*;
