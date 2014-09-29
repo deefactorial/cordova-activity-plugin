@@ -1,0 +1,5 @@
+<resources>
+
+    <string name="app_name">cordova-plugin</string>
+    <string name="crash_toast_text">A Crash report has been sent</string>
+</resources>
