@@ -40,6 +40,7 @@
         </config-file>
 
         <source-file src="src/android/OpenActivity.java" target-dir="src/technology/deefactorial/cordova/activityopen" />
+        <source-file src="src/android/reporting.java" target-dir="src/technology/deefactorial/cordova/activityopen" />
 
         <js-module src="www/OpenActivity.js" name="OpenActivity">
             <clobbers target="window.OpenActivity" />
