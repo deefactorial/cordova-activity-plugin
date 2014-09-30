@@ -8,7 +8,7 @@ import org.acra.annotation.*;
     formKey = "", // This is required for backward compatibility but not used
     //formUri = "http://www.backendofyourchoice.com/reportpath"
     mailTo = "deefactorial@gmail.com",
-    mode = ReportingInteractionMode.TOAST,
+    //mode = ReportingInteractionMode.TOAST,
     customReportContent = { ReportField.APP_VERSION_CODE, ReportField.APP_VERSION_NAME, ReportField.ANDROID_VERSION, ReportField.PHONE_MODEL, ReportField.CUSTOM_DATA, ReportField.STACK_TRACE, ReportField.LOGCAT } 
     //resToastText = R.string.crash_toast_text
 )
