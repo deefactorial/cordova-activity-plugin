@@ -53,5 +53,13 @@ module.exports = {
 	         }, function(err) {
 	            callback(err);
 	        }, "OpenActivity", "getReplicationStatus", []);
-	    }
+	    },
+	    setReplicationChangeListener : function(callback) {
+	         // use node.js style error reporting (first argument)
+	         cordova.exec(function(response){
+	            callback(false, response);
+	         }, function(err) {
+	            callback(err);
+	        }, "OpenActivity", "setReplicationChangeListener", []);
+	    },
 	}
