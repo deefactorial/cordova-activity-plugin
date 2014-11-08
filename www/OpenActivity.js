@@ -61,5 +61,5 @@ module.exports = {
 	         }, function(err) {
 	            callback(err);
 	        }, "OpenActivity", "setReplicationChangeListener", []);
-	    },
+	    }
 	}
