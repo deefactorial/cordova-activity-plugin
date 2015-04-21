@@ -55,7 +55,9 @@ public class OpenActivity extends CordovaPlugin {
         	ExecutorService ex = this.cordova.getThreadPool();
         	ex.execute(obj);
         	
-        } else if(action.equals("setReplicationChangeListener")) {
+        }
+        /*
+        else if(action.equals("setReplicationChangeListener")) {
 
         	
         	try {
@@ -93,7 +95,9 @@ public class OpenActivity extends CordovaPlugin {
     			e.printStackTrace();
     			callbackContext.error(e.getMessage());
     		}
-        } else {
+        } */
+
+        else {
         	i = new Intent(action);
         	i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         	context.startActivity(i);
