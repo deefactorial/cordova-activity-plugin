@@ -50,14 +50,14 @@ public class OpenActivity extends CordovaPlugin {
 	            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 	        }
             context.startActivity(i);
-        } else if(action.equals("getReplicationStatus")) {
+        }
+        /*
+         else if(action.equals("getReplicationStatus")) {
         	MyRunnable obj = new MyRunnable(context, callbackContext);
         	ExecutorService ex = this.cordova.getThreadPool();
         	ex.execute(obj);
         	
-        }
-        /*
-        else if(action.equals("setReplicationChangeListener")) {
+        } else if(action.equals("setReplicationChangeListener")) {
 
         	
         	try {
@@ -109,7 +109,8 @@ public class OpenActivity extends CordovaPlugin {
         
         return true;
     }
-    
+
+    /*
     private class MyRunnable implements Runnable {
   	  private CallbackContext callbackContext;
   	  private Context context;
@@ -161,6 +162,7 @@ public class OpenActivity extends CordovaPlugin {
 			callbackContext.error(e.getMessage());
 		}
   	  }
-  }
+  	}
+  	*/
 }
 
